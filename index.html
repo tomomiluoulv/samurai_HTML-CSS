@@ -1,88 +1,106 @@
-
-<!DOCTYPE html>  
+<!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <title>HTML/CSSの学習</title>
-        <link rel="stylesheet" href="stylesheet.css">
-    </head>
-    <body>
-        <header>
-            <h1><a href="index.html"><img id="corridor" src="images/corridor.jpg" alt="大学の廊下" /></a></h1> 
-            <nav>
-                <ul>
-                    <li><a href="index.html">ナビ1</a></li>
-                    <li><a href="#">ナビ2</a></li>
-                    <li><a href="#">ナビ3</a></li>
-                    <li><a href="#">ナビ4</a></li>
-                    <li><a href="#">ナビ5</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main id="wrapper">
-            <section id="content">
-                <article>
-                <p>ここは文章が入ります。ここは文章が入ります。ここは文章が入ります。<br />今は、適当な文章を入れてあります。これをダミーテキストといいます。</p>
-                </article>
-                <article>
-                    <h2>小見出し1</h2>
-                    <div class="post1">
-                        <img class="flexbox" src="images/classroom.jpg" alt="授業風景" />
-                        <div class="flexbox">
-                            <p>コンテンツ1の本文になります。コンテンツ1の本文になります。コンテンツ1の本文になります。コンテンツ1の本文になります。
-                            コンテンツ1の本文になります。コンテンツ1の本文になります。コンテンツ1の本文になります。コンテンツ1の本文になります。</p>
-                            <p><a href="#">→コンテンツ1のページへ</a></p>
-                            </div>
-                        </div>
-                </article>
-                <article>
-                    <h2>小見出し2</h2>
-                    <div class="post2">
-                        <img class="flexbox" src="images/scale.jpg" alt="天秤" />
-                        <div class="flexbox">
-                            <p>コンテンツ2の本文になります。コンテンツ2の本文になります。コンテンツ2の本文になります。コンテンツ2の本文になります。
-                            コンテンツ2の本文になります。コンテンツ2の本文になります。コンテンツ2の本文になります。コンテンツ2の本文になります。</p>
-                        </div>
-                    </div>
-                </article>
-            </section>
-            <section class="sidemenu">
-                <input id="menu" type="checkbox">
-                <label class="menu-btn" for="menu">
-                <span></span>
-                </label>
-                <aside class="side">
-                    <div class="box">
-                        <h2>サイドメニュー1</h2>
-                        <div class="boxBody">
-                            <ul>
-                                <li>項目1</li>
-                                <li>項目2</li>
-                                <li>項目3</li>
-                                <li>項目4</li>
-                            </ul>
-                        </div>
-                        <div class="square"></div>
-                    </div>
-                    <div class="box">
-                        <h2>サイドメニュー2</h2>
-                        <div class="boxBody">
-                            <ul>
-                                <li>項目1</li>
-                                <li>項目2</li>
-                                <li>項目3</li>
-                                <li>項目4</li>
-                            </ul>
-                        </div>
-                        <div class="square"></div>
-                    </div>
-                </aside>
-            </section>
-            
-        </main>
-        <footer>
-            <small>&copy; 20xx ○○ All Rights Reserved.</small>
-        </footer>
-    </body>
-</html> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ほほえみゼミナール</title>
+    <meta name="description" content="テキストテキストテキスト" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script type='text/javascript' src='./js/script.js'></script>
+</head>
+<body>
+<header id="header">
+    <h1><img src="./img/top/logo.gif" alt="ロゴ"></h1>
+    <nav>
+        <a href="exform.html">無料体験</a>
+        <a href="dform.html">資料請求</a>
+    </nav>
+    <nav class="sp-only">
+        <input id="gnav" type="checkbox">
+        <label class="gnav-btn" for="gnav">
+        <span></span>
+        </label>
+        <div class="nav-sp">
+            <ul>
+                <li>Home</li>
+                <li>塾について</li>
+                <li>コース</li>
+                <li>料金</li>
+                <li>アクセス</li>
+                <li><a href="exform.html">無料体験</a></li>
+                <li><a href="dform.html">資料請求</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<img class="mv" src="./img/top/MV.png" alt="地域密着型の学習塾。独自のカリキュラムでやる気が上がる！勉強が楽しくなる！">
+<nav id="pc-only">
+<ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">塾について</a></li>
+    <li><a href="course.html">コース</a></li>
+    <li><a href="price.html">料金</a></li>
+    <li><a href="access.html">アクセス</a></li>
+</ul>
+<ul class="form">
+    <li><a href="exform.html">無料体験</a></li>
+    <li><a href="dform.html">資料請求</a></li>
+</ul>
+</nav>
+<main>
+    <article id="info"><h2>infomation</h2>
+    <ul>
+        <li><time datetime="2022-01-05">2022/01/05</time><p>渋谷校オープン！</p></li>
+        <li><time datetime="2022-01-17">2022/01/17</time><p>新宿校オープン！</p></li>
+    </ul>
+    </article>
+    <section>
+        <h2>4月生募集中！</h2>
+        <p>新学年のスタートダッシュ！<br>
+           学校の勉強を先取します。</p>
+        <p>プロの講師陣が勉強の楽しさをお伝えします。<br>
+            独自のカリキュラムで学校の勉強がわかる！やる気が上がる！</p>
+        <nav>
+            <a href="exform.html">無料体験</a>
+            <a href="dform.html">資料請求</a>
+        </nav>
+    </section>
+    <section>
+        <div id="flexbox1">
+            <div><h2>勉強は苦手・・・。<br>宿題がはかどらない。</h2>
+                <p>そんな我が子のストレス解消しませんか？<br>
+                独自のカリキュラムで楽しく勉強が続けられます！<p>
+                <p><a href="about.html">塾について</a></p>
+            </div>
+            <img src="./img/top/photo1.jpg" alt="">
+        </div>
+    </section>
+    <section>
+        <div id="flexbox2">
+            <div><h2>地位密着型の塾</h2>
+                <p>お友達がいるからこそ続けられる！<br>楽しく勉強できる！<br>地域密着型だからこそできる、近隣の学校のカリキュラムに沿って学習を行えます。<p>
+                <p><a href="course.html">コース</a></p>
+            </div>
+            <img src="./img/top/photo2.jpg" alt="">
+        </div>
+    </section>
+</main>
+<footer>
+    <p><img src="./img/top/logo.gif" alt="ほほえみゼミナール"></p>
+    <address>tel:0120-123-4567</address>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>塾について</li>
+            <li>コース</li>
+            <li>料金</li>
+            <li>アクセス</li>
+            <li><a href="exform.html">無料体験</a></li>
+            <li><a href="dform.html">資料請求</a></li>
+        </ul>    
+        </nav>
+        <p><small>&copy;</small></p>
+</footer>
+</body>
+</html>
